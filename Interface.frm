@@ -46,7 +46,7 @@ EndProcedure:
    
 ErrorTrap:
    If HandleError() = vbIgnore Then Resume EndProcedure
-   If HandleError(ReturnPreviousChoice:=True) = vbIgnore Then Resume
+   If HandleError(ReturnPreviousChoice:=True) = vbRetry Then Resume
 End Sub
 
 'This procedure handles the user's keystrokes.
@@ -77,7 +77,7 @@ EndProcedure:
    
 ErrorTrap:
    If HandleError() = vbIgnore Then Resume EndProcedure
-   If HandleError(ReturnPreviousChoice:=True) = vbIgnore Then Resume
+   If HandleError(ReturnPreviousChoice:=True) = vbRetry Then Resume
 End Sub
 
 'This procedure initializes this window.
@@ -95,7 +95,7 @@ EndProcedure:
    
 ErrorTrap:
    If HandleError() = vbIgnore Then Resume EndProcedure
-   If HandleError(ReturnPreviousChoice:=True) = vbIgnore Then Resume
+   If HandleError(ReturnPreviousChoice:=True) = vbRetry Then Resume
 End Sub
 
 
