@@ -29,7 +29,11 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 'This module contains this program's main inteface.
+Option Base 0
+Option Compare Binary
 Option Explicit
+
+DefLng A-Z
 
 
 
